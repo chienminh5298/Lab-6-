@@ -17,8 +17,10 @@ def decode(encode_pwd):
     decoded = []
     for i in encode_pwd:
         i = int(i) - 3
+        if i < 0:
+            i += 10
         decoded.append(i)
-    de_coded_s = [str(num) for num in decoded]
+    de_coded_s = [str(i) for i in decoded]
     de_coder_str = ''.join(de_coded_s)
 
     return de_coder_str
