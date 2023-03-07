@@ -37,7 +37,6 @@ def main():
 
         if choose == 1:
             encode_pwd = encode()
-            print(encode_pwd)
         elif choose == 2:
             # Brianna Yanqui
             de_code = decode(encode_pwd)
@@ -47,3 +46,4 @@ def main():
 
 
 main()
+
